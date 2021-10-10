@@ -1,26 +1,38 @@
-# Lightweight Processor
-Is a lightweight word processor for the web.
+# LightP word processor
 
-### To do:
-- Update linking and image adding to include inline functions.
-- Make menu recognize values.
-- Margin bars.
-### Finished:
-- Icons.
-- Base functionality. (pages with typing, keyboard shortcuts, website layout, etc.)
-- Dropdown menus.
-- File dropdown menu functionality.
-- Title manipulation.
-- Line height.
-- Finish adding document editing features.
-- Finish adding control bar features.
-- Finish loading and saving different file types.
-- Update save and load to actually download data.
-- Autosaving.
-- Example files.
-- CSS Animations.
+![](logo.png)
+(icon by the [Numix Project](https://github.com/numixproject/numix-icon-theme-square) - GPL-3.0)
 
-## Processing Perfected
-While this project is not finished, my aim from the beginning has been to create the most user friendly word processor I can. I'm slowly taking my favorite features from Microsoft Word, Google Docs, LibreOffice, Sublime Text, VSCode, Wordpad, and even Notepad, and combining them into a processor that is satisfying and easy to use! The project isn't finished, it's missing a bunch of features, and it's probably got a few bugs. But by the end, I hope it becomes something that you enjoy using.
+LightP is a simple HTML5 word processor for Ubuntu Touch based on the work of [NotTimTam](https://github.com/NotTimTam/LightP). It is compatible with the .rtf format but, unfortunately, at this moment it is only compatible with files that have been created by itself. You can use [Document Viewer](https://open-store.io/app/com.ubuntu.docviewer) to read other files.
 
-The main things I wanted to be certain of was that its code was simple and open-source. So anyone could take the base I've created and use it to make their own word processor that is specific to what they want. Please give credit somewhere in your project if you use my code. Thanks! 
+Documents are stored in the /home/phablet/.local/share/lightp.collaproductions/Downloads directory by default. If you would prefer to have your documents inside your ~/Documents directory, you can delete the original folder and turn it into a symlink to the latter:
+
+```
+$ rm -rf ~/.local/share/lightp.collaproductions/Downloads
+$ ln -s ~/Documents ~/.local/share/lightp.collaproductions/Downloads
+```
+
+This will make sure your documents are stored in your ~/Documents folder. If you want to pick a different directory, change your command accordingly.
+
+### Building the app (Ubuntu-based distros)
+
+Install [clickable](https://clickable-ut.dev/en/latest/install.html):
+
+```
+$ sudo add-apt-repository ppa:bhdouglass/clickable
+$ sudo apt-get install clickable
+```
+
+Clone this repository and build:
+
+```
+$ git clone https://github.com/nicolascolla/LightP.git
+$ cd LightP/lightp
+$ clickable
+```
+
+The resulting click package will be found under build/all/app.
+
+### Screenshots
+
+![](screenshot1.png) ![](screenshot2.png)
