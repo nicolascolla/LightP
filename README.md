@@ -1,7 +1,10 @@
-# LightP word processor
+# LightP Word Processor
 
 ![](logo.png)
+
 (icon by the [Numix Project](https://github.com/numixproject/numix-icon-theme-square) - GPL-3.0)
+
+[![OpenStore](https://open-store.io/badges/en_US.png)](https://open-store.io/app/lightp.collaproductions)
 
 LightP is a simple HTML5 word processor for Ubuntu Touch based on the work of [NotTimTam](https://github.com/NotTimTam/LightP). It is compatible with the .rtf format but, unfortunately, at this moment it is only compatible with files that have been created by itself. You can use [Document Viewer](https://open-store.io/app/com.ubuntu.docviewer) to read other files.
 
