@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightP</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Tim Phillips">
+    <meta name="description" content="A lightweight word processor for the web.">
+    
+    <meta property="og:image" content="images/highlight.png">
+    <meta property="og:description" content="A lightweight word processor for the web.">
+    <meta property="og:title" content="LightP">
+
+    <link rel="shortcut icon" href="images/highlight.png".png" type="image/x-icon">
+
+</head>
+<body style="padding: 0px; margin: 0px; overflow-y: scroll; background-color: white;">
+    <div class="newdoc" id="newdoc">
+        <h3>Start a new document</h3>
+        <div class="docselectors" id="docselectors">
+            <div class="docselector" id="blank">
+                <input type="image" src="images/blank.png" class="docselector-image" onclick="location.href = 'editor.html#blank'">
+                <p style="font-weight: bolder;">Blank</p>
+            </div>
+            <div class="docselector" id="essay">
+                <input type="image" src="images/essay.png" class="docselector-image" onclick="location.href = 'editor.html#essay'" title="ALL CREDIT TO GOOGLE">
+                <p style="font-weight: bolder;" title="ALL CREDIT TO GOOGLE">Essay</p>
+            </div>
+            <div class="docselector" id="resume">
+                <input type="image" src="images/resume.png" class="docselector-image" onclick="location.href = 'editor.html#resume'" title="ALL CREDIT TO GOOGLE">
+                <p style="font-weight: bolder;" title="ALL CREDIT TO GOOGLE">Resume</p>
+            </div>
+            <div class="docselector" id="resume">
+                <input type="image" src="https://ssl.gstatic.com/docs/templates/thumbnails/10e8_E36oj6_LuCRzckBFX_9oqbCHntmYB-jxB5U9gsw_400_2.png" class="docselector-image" onclick="location.href = 'editor.html#letter'" title="ALL CREDIT TO GOOGLE">
+                <p style="font-weight: bolder;" title="ALL CREDIT TO GOOGLE">Letter</p>
+            </div>
+        </div>
+    </div>
+    <div class="existingdocs" id="existingdocs">
+        <ul class="existingdocs-list" id="existingdocs-list">
+            <h3>Documents</h3>
+            <p>Documents are stored in the /home/phablet/.local/share/lightp.collaproductions/Downloads directory.</p>
+            <p>If you would prefer to send your documents to your Documents folder, open your terminal and type "rm -rf ~/.local/share/lightp.collaproductions/Downloads && ln -s ~/Documents ~/.local/share/lightp.collaproductions/Downloads" (WARNING: This command will delete your previous documents).
+        </ul>
+    </div>
+
+    <p style="text-align: center;">The document templates used in this project were created by <a href="https://docs.google.com/" target="_blank" title="Google Docs (docs.google.com)">Google.</a></p>
+    <script src="scripts/listdata.js"></script>
+</body>
+</html>

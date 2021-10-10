@@ -1,0 +1,15 @@
+{
+    "name": "lightp.collaproductions",
+    "description": "Offline document editor",
+    "architecture": "@CLICK_ARCH@",
+    "title": "LightP Word Processor",
+    "hooks": {
+        "lightp": {
+            "apparmor": "lightp.apparmor",
+            "desktop":  "lightp.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "Nicolás Colla <nicolascolla@mail.ru>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

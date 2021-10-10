@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=LightP Word Processor
+Exec=webapp-container --app-id="lightp.collaproductions" $@ www/index.html
+Icon=assets/logo.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+X-Ubuntu-Splash-Color=#aa71b5
+X-Ubuntu-Splash-Image=assets/splash.png
