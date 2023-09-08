@@ -37,6 +37,27 @@ $ clickable
 
 The resulting click package will be found under build/all/app.
 
+### Building instructions for 16.04
+
+Install [clickable](https://clickable-ut.dev/en/latest/install.html):
+
+```
+$ sudo add-apt-repository ppa:bhdouglass/clickable
+$ sudo apt-get install clickable
+```
+
+Clone this repository, change the framework and build:
+
+```
+$ git clone https://github.com/nicolascolla/LightP.git
+$ cd LightP/lightp
+$ sed -i 's/ubuntu-sdk-20.04/ubuntu-sdk-16.04.5/' clickable.json
+$ sed -i 's/20.04/16.04/' lightp.apparmor
+$ clickable
+```
+
+The resulting click package will be found under build/all/app.
+
 ### Screenshots
 
 ![](screenshot1.png) ![](screenshot2.png)
