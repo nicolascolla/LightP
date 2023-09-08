@@ -60,4 +60,4 @@ The resulting click package will be found under build/all/app.
 
 ### Screenshots
 
-![](screenshot1.png) ![](screenshot2.png)
+![](screenshot1.png) ![](screenshot2.png) ![](screenshot3.png)
