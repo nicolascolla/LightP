@@ -30,8 +30,6 @@
                 <li class="nav-section"><input type="button" class="nav-button" value="Edit" id="edit-button" onclick="if (isDropOn('edit-drop')) { changeDrop('edit-drop', false); } else { changeDrop('edit-drop', true); }"></li>
                 <li class="nav-section"><input type="button" class="nav-button" value="Insert" id="insert-button" onclick="if (isDropOn('insert-drop')) { changeDrop('insert-drop', false); } else { changeDrop('insert-drop', true); }"></li>
                 <li class="nav-section"><input type="button" class="nav-button" value="Tools" id="tool-button" onclick="if (isDropOn('tool-drop')) { changeDrop('tool-drop', false); } else { changeDrop('tool-drop', true); }"></li>
-                <li class="nav-section" id="darkmodebtn-w"><a onclick="toggleDarkMode()"><img src="images/moon.svg" height="18px" style="margin-top:0px; margin-left: 4px;"/></a></li>
-                <li class="nav-section" id="darkmodebtn-b"><a onclick="toggleDarkMode()"><img src="images/sun.svg" height="26px" style="margin-top:-3px; margin-left: 4px; filter: invert(100%);"/></a></li>
             </ul>
         </div>
 
@@ -122,7 +120,9 @@
 
         <div class="dropdown-child" id="tool-drop" style="display: none; margin-left: 147px; margin-top: -52px;">
             <ul class="dropdown-list">
-                <li class="dropdown-section"><input type="button" class="dropdown-button" value="About" onclick="window.open('https://github.com/nicolascolla/LightP')"></li>
+function darkMode() {
+                
+<li class="dropdown-section"><input type="button" class="dropdown-button" value="About" onclick="window.open('https://github.com/nicolascolla/LightP')"></li>
             </ul>
         </div>
 

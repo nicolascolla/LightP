@@ -15,7 +15,7 @@
 body {
     background-color: #e7e7e7;
     margin: 0px;
-    font-family: sans-serif;
+    font-family: Ubuntu, sans-serif;
     overflow-y: hidden;
 }
 
@@ -114,6 +114,7 @@ img {
 
 .text-button {
     transform: translateY(-12px);
+    margin-top: 12px;
 }
 
 .tool-button:hover {
@@ -135,7 +136,7 @@ img {
     background: none;
     border: none;
     font-size: 18px;
-    font-family: sans-serif;
+    font-family: Ubuntu, sans-serif;
     margin-left: 20px;
     margin-top: 10px;
     min-width: fit-content;
@@ -168,6 +169,10 @@ img {
     padding-left: 0px;
     margin-top: 5px;
     margin-bottom: 5px;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
 }
 
 .nav-section {
@@ -202,7 +207,7 @@ img {
     height: 200px;
     box-shadow: 1px 1px 5px gray;
     border-radius: 5px;
-    font-family: sans-serif;
+    font-family: Ubuntu, sans-serif;
     outline: none;
 }
 
@@ -286,7 +291,7 @@ img {
 
 .newdoc {
     background-color: whitesmoke;
-    font-family: sans-serif;
+    font-family: Ubuntu, sans-serif;
     margin: 0px;
     padding-left: 20vw;
     padding-right: 20vw;

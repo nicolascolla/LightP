@@ -11,19 +11,11 @@ function addStyle(styleString) {
 // Dark mode and light mode
 function darkMode() {
     localStorage.setItem("darkmode", "1");
+    document.getElementById("darkmodebtn").src="sun.png";
+
     addStyle(`
         header {
             background-color: black;
-        }
-    `);
-    addStyle(`
-        #darkmodebtn-w {
-            display: none;
-        }
-    `);
-   addStyle(`
-        #darkmodebtn-b {
-            display: block;
         }
     `);
     addStyle(`
@@ -55,19 +47,10 @@ function darkMode() {
 
 function lightMode() {
     localStorage.setItem("darkmode", "0");
+    document.getElementById("darkmodebtn").src="../images/moon.svg";
     addStyle(`
         header {
             background-color: white;
-        }
-    `);
-    addStyle(`
-        #darkmodebtn-b {
-            display: none;
-        }
-    `);
-   addStyle(`
-        #darkmodebtn-w {
-            display: block;
         }
     `);
     addStyle(`

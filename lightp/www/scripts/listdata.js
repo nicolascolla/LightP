@@ -1,3 +1,74 @@
+// Dark mode and light mode
+/**
+ * Utility function to add CSS in multiple passes.
+ * @param {string} styleString
+ */
+function addStyle(styleString) {
+    const style = document.createElement('style');
+    style.textContent = styleString;
+    document.head.append(style);
+}
+
+// Dark mode and light mode
+function darkMode() {
+    addStyle(`
+        body {
+            background-color: black !important;
+            color: white !important;
+        }
+    `);
+    addStyle(`
+        a {
+            color: red !important;
+        }
+    `);
+    addStyle(`
+        .newdoc {
+            background-color: #222222 !important;
+            color: white !important;
+        }
+    `);
+}
+
+function lightMode() {
+    addStyle(`
+        body {
+            background-color: white !important;
+            color: black !important;
+        }
+    `);
+    addStyle(`
+        a {
+            color: blue !important;
+        }
+    `);
+    addStyle(`
+        .newdoc {
+            background-color: whitesmoke !important;
+            color: black !important;
+        }
+    `);
+}
+
+// Dark mode toggle
+function toggleDarkMode() {
+  if (localStorage.getItem("darkmode") == 1) {
+    lightMode();
+  } else {
+    darkMode();
+  }
+}
+
+// Restore dark mode state after a reboot
+function restoreDarkModeState() {
+  if (localStorage.getItem("darkmode") == 1) {
+    darkMode();
+  } else {
+    lightMode();
+  }
+}
+restoreDarkModeState();
+
 // Delete items.
 function deleteItem(key) {
     localStorage.removeItem(key);
