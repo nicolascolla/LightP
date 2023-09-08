@@ -31,6 +31,7 @@ header {
 
 .nav-top {
     border-bottom: 1px lightgray solid;
+    height: 26px;
 }
 
 .nav-bottom {
