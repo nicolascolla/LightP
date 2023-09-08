@@ -146,7 +146,7 @@ img {
     min-width: fit-content;
     max-width: 100%;
     border-radius: 2px;
-    border: 1px white solid;
+    padding: 5px;
 }
 
 .title:hover {
