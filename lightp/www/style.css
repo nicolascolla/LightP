@@ -73,8 +73,8 @@ main::-webkit-scrollbar{
     background-color: white;
     min-height: 840px;
     height: max-content;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: -40px;
+    margin-bottom: 0px;
     width: auto;
     padding: 30px;
     padding-top: 1in;
