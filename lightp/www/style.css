@@ -44,6 +44,10 @@ main {
     overflow: scroll;
 }
 
+main::-webkit-scrollbar{
+    display: none;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -173,6 +177,10 @@ img {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
+}
+
+.nav::-webkit-scrollbar {
+    display: none;
 }
 
 .nav-section {
